@@ -7,17 +7,21 @@
     "server": "nodemon ./bin/www"
   },
   "dependencies": {
+    "@prisma/client": "^5.5.2",
+    "bcrypt": "^5.1.1",
     "body-parser": "~1.17.1",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.3",
     "express": "~4.15.2",
     "jade": "~1.11.0",
+    "jsonwebtoken": "^9.0.2",
     "morgan": "~1.8.1",
     "serve-favicon": "~2.4.2"
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
     "dotenv": "^16.3.1",
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.1",
+    "prisma": "^5.5.2"
   }
 }
