@@ -3,7 +3,6 @@ import { createSlice } from "@reduxjs/toolkit";
 
 import { authApi } from "../../app/services/auth";
 import { RootState } from "../../app/store";
-import { stat } from "fs";
 
 interface IInitialState {
   user: (User & { token: string }) | null;
@@ -44,6 +43,6 @@ export const { logout } = slice.actions;
 export default slice.reducer;
 
 export const selectIsAuthenticated = (state: RootState) =>
-  state.auth.isAuthenticated;
+  state.authSlice.isAuthenticated;
 
-export const selectUser = (state: RootState) => state.auth.user;
+export const selectUser = (state: RootState) => state.authSlice;
