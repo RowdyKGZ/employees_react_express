@@ -14,6 +14,7 @@ import { Employess } from "./pages/employees";
 import { AddEmployee } from "./pages/add-employee";
 import { Status } from "./pages/status";
 import { Employee } from "./pages/employee";
+import { EditEmployee } from "./pages/edit-employee";
 
 const container = document.getElementById("root")!;
 const root = createRoot(container);
@@ -25,6 +26,7 @@ const router = createBrowserRouter([
   { path: PATH.employeeAdd, element: <AddEmployee /> },
   { path: `${PATH.status}/:status`, element: <Status /> },
   { path: `${PATH.employee}/:id`, element: <Employee /> },
+  { path: `${PATH.employeeEdit}/:id`, element: <EditEmployee /> },
 ]);
 
 root.render(
